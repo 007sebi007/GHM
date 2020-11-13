@@ -25,8 +25,9 @@
       width: 100%;
 
       &.CT{
-        .team-name, .team-score, .team-event{ color: @ct-color-main; }
+        .team-score, .team-event{ color: @ct-color-main;}
         .team-score{ border-bottom: 4px solid @ct-color-main; }
+        .team_name{ font-size: 35px; color: @ct-color-header; }
 
         .show-defuse{
           opacity: 1;
@@ -35,8 +36,9 @@
       }
 
       &.T{
-        .team-name, .team-score, .team-event{ color: @t-color-main; }
+        .team-score, .team-event{ color: @t-color-main; }
         .team-score{ border-bottom: 4px solid @t-color-main; }
+        .team_name{ font-size: 35px; color: @t-color-header; }
 
         .show-bomb{
           opacity: 1;
@@ -85,7 +87,7 @@
 
               .progress{
                 position: absolute;
-                background-color: rgba(255, 255, 255, 0.88);
+                background: linear-gradient(90deg, rgba(249,255,0,1) 0px, rgba(209,2,2,1) 200px, rgba(140,0,0,1) 100%);
                 transition: width 100ms;
                 width: 0%;
                 max-width: 100%;
@@ -126,14 +128,15 @@
           background-color: @ui-background-main;
 
           &.smaller{
-            font-size: 26px;
+            font-size: 35px;
+            color: #ffffff;
           }
         }
 
         .team-score{
           width: 75px;
           text-align: center;
-          font-size: 55px;
+          font-size: 50px;
           font-weight: bold;
           background-color: @ui-background-main-dark;
           position: relative;

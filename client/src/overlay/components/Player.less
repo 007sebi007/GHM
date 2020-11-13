@@ -129,24 +129,27 @@
     display: flex;
     justify-content: flex-end;
     height: 100%;
+    padding-top: 2px;
 
     .name{
       max-width: 120px;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-    }
-
-    .name, .data-divider{
       font-size: 18px;
       font-weight: bold;
     }
+
     .data-divider{
+      font-size: 18px;
       padding-left: 5px;
       padding-right: 5px;
+      font-weight: unset;
     }
     .spec-num{
-      font-size: 15px;
+      font-size: 12px;
+      font-weight: unset;
+      padding-bottom: 1px;
     }
   }
 
@@ -156,6 +159,7 @@
     font-size: 22px;
     font-weight: bold;
     text-align: center;
+    padding-top: 2px;
   }
 }
 
@@ -203,8 +207,7 @@
   .player-money{
     text-align: left;
     flex: 1;
-    padding-left: 0;
-    padding-right: 10px;
+    padding-top: 4px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -323,28 +326,28 @@ img.holstered{
 
 // * CT PLAYER
 .overlay-left>.team.CT>.team-player>.player-container>.player-health-bar{
-  background: -webkit-linear-gradient(left, @ct-color-gradient-off 2%, @ct-color-gradient-main 100%);
+  background: -webkit-linear-gradient(left, @ct-color-gradient-off-opacity 2%, @ct-color-gradient-main-opacity 100%); 
 }
 
 .overlay-right>.team.CT>.team-player>.player-container>.player-health-bar{
-  background: -webkit-linear-gradient(right, @ct-color-gradient-off 2%, @ct-color-gradient-main 100%);
+  background: -webkit-linear-gradient(right, @ct-color-gradient-off-opacity 2%, @ct-color-gradient-main-opacity 100%); 
 }
 
 // * T PLAYER
 .overlay-left>.team.T>.team-player>.player-container>.player-health-bar{
-  background: -webkit-linear-gradient(left, @t-color-gradient-off 0%, @t-color-main 60%);
+  background: -webkit-linear-gradient(left, @t-color-gradient-off-opacity 0%, @t-color-gradient-main-opacity 60%); 
 }
 
 .overlay-right>.team.T>.team-player>.player-container>.player-health-bar{
-  background: -webkit-linear-gradient(right, @t-color-gradient-off 0%, @t-color-main 60%);
+  background: -webkit-linear-gradient(right, @t-color-gradient-off-opacity 0%, @t-color-gradient-main-opacity 60%); 
 }
 
 // * SELECTED PLAYER
 .overlay-left>.team>.team-player.watching>.player-area-lower{
-  background: -webkit-linear-gradient(left, @ui-background-light 0%,@ui-background-light-inv 60%);
+  background: -webkit-linear-gradient(left, @ui-watching-player 0%,@ui-watching-player-inv 60%);
 }
 .overlay-right>.team>.team-player.watching>.player-area-lower{
-  background: -webkit-linear-gradient(right, @ui-background-light 0%,@ui-background-light-inv 60%);
+  background: -webkit-linear-gradient(right, @ui-watching-player 0%,@ui-watching-player-inv 60%);
 }
 
 // * FLASH EFFECT
