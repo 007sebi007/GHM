@@ -1,3 +1,7 @@
+cd ../app
+call npm i electron -g
+cd ../radar
+call npm install
 cd ../client
 call npm install
 cd ../server
