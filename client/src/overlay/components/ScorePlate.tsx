@@ -187,7 +187,7 @@ class ScorePlate extends PureComponent<Props, ComponentState> {
             />
             <TimeoutAnnoucement
               timeout={teamATimeout}
-              eventText={`${teamAName} timeout (${teamATimeoutAmount}/${config.maxRounds})`}
+              eventText={`TIMEOUT (${teamATimeoutAmount} / ${config.maxRounds})`}
             />
             <DefuseAnnouncement
               defusing={bomb ? bomb.state === 'defusing' : false}
@@ -244,7 +244,7 @@ class ScorePlate extends PureComponent<Props, ComponentState> {
             />
             <TimeoutAnnoucement
               timeout={teamBTimeout}
-              eventText={`${teamBName} timeout (${teamBTimeoutAmount}/${config.maxRounds})`}
+              eventText={`TIMEOUT (${teamBTimeoutAmount} / ${config.maxRounds})`}
             />
             <DefuseAnnouncement
               defusing={bomb ? bomb.state === 'defusing' : false}

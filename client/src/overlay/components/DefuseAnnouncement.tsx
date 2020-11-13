@@ -21,7 +21,7 @@ export default ({
               width: `${((hasKit ? 5 : 10) - countdown + 0.05) / (hasKit ? 5 : 10) * 105}%`
             }}
           />
-          <span>DEFUSING</span>
+          <span>          </span>
         </div>
       ) : null}
     </div>

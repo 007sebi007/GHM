@@ -145,7 +145,7 @@ class Player extends PureComponent<Props, ComponentState> {
               <div
                 className='name'
               >{name}</div>
-              <div className='data-divider'>|</div>
+              <div className='data-divider'> &#10072; </div>
               <div className='spec-num'>{observerSlot}</div>
             </div>
             <div className='player-health'>
@@ -182,7 +182,7 @@ class Player extends PureComponent<Props, ComponentState> {
             </div>
           </div>
           <div className='player-money'>
-            <p>${state.money}</p>
+            <p>$ {state.money}</p>
           </div>
           <div className={`player-utility`}>
             {state.helmet ? (

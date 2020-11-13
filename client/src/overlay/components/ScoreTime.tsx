@@ -79,8 +79,8 @@ export default ({
         {phase === 'warmup'
           ? 'WARMUP'
           : isOvertime
-            ? `OT ${otTimes} (${otRound}/${otRounds})`
-            : `Round ${round + 1}/30`}
+            ? `OT ${otTimes} Round ${otRound}`
+            : `Round ${round + 1}`}
       </div>
     </>
   )
